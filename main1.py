@@ -76,3 +76,6 @@ tick = 0
 while True:
     tick += 1
     for limit in memories:
+        limit.step(memories)
+        if random.random() < 0.01:
+            echoes.append((int(limit.value), int(limit.output), random.choice(limit.word)))

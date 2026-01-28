@@ -22,3 +22,6 @@ class Memory:
         self.char = random.choice(symbols)
         self.word = "".join(random.choice(alphabet) for _ in range(random.randint(3, 7)))
 
+    def step(self, field):
+        dx = cx - self.value
+        dy = cy - self.output

@@ -61,3 +61,6 @@ def render(memories, echoes):
 def merge(a, b):
     limit = Memory()
     limit.value = (a.value + b.value) / 2
+    limit.output = (a.output + b.output) / 2
+    limit.vx = (a.vx + b.vx) / 2
+    limit.vy = (a.vy + b.vy) / 2

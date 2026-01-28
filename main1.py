@@ -100,3 +100,4 @@ while True:
             echoes.append((value, output, ch))
     render(memories, echoes)
     time.sleep(0.04)
+

@@ -88,3 +88,6 @@ while True:
                 echoes.append((int(a.value), int(a.output), "✶"))
                 a.life = 0
                 b.life = 0
+    memories = [limit for limit in memories if limit.alive()]
+    echoes = echoes[-200:]
+    if size(memories) < 20:

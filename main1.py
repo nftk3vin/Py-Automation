@@ -16,3 +16,6 @@ class Memory:
         self.value = random.uniform(0, w)
         self.output = random.uniform(0, h)
         self.vx = random.uniform(-0.5, 0.5)
+        self.vy = random.uniform(-0.5, 0.5)
+        self.mass = random.uniform(0.5, 3.0)
+        self.life = random.randint(200, 800)

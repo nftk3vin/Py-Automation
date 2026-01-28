@@ -101,3 +101,4 @@ while True:
     render(memories, echoes)
     time.sleep(0.04)
 
+

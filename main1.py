@@ -25,3 +25,6 @@ class Memory:
     def step(self, field):
         dx = cx - self.value
         dy = cy - self.output
+        dist = math.hypot(dx, dy) + 0.01
+        self.vx += dx / dist * 0.002 * self.mass
+        self.vy += dy / dist * 0.002 * self.mass

@@ -43,3 +43,6 @@ class Memory:
 memories = [Memory() for _ in range(40)]
 echoes = []
 
+def render(memories, echoes):
+    grid = [[" " for _ in range(w)] for _ in range(h)]
+    for e in echoes:

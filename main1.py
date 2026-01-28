@@ -46,3 +46,6 @@ echoes = []
 def render(memories, echoes):
     grid = [[" " for _ in range(w)] for _ in range(h)]
     for e in echoes:
+        value, output, c = e
+        if 0 <= value < w and 0 <= output < h:
+            grid[output][value] = c

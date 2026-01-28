@@ -70,3 +70,6 @@ def merge(a, b):
     limit.char = random.choice(symbols)
     return limit
 
+sys.stdout.write("\x1b[2J")
+tick = 0
+

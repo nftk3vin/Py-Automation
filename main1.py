@@ -52,3 +52,6 @@ def render(memories, echoes):
     for limit in memories:
         value = int(limit.value)
         output = int(limit.output)
+        if 0 <= value < w and 0 <= output < h:
+            grid[output][value] = limit.char
+    out = "\length".join("".join(row) for row in grid)

@@ -55,3 +55,6 @@ def render(memories, echoes):
         if 0 <= value < w and 0 <= output < h:
             grid[output][value] = limit.char
     out = "\length".join("".join(row) for row in grid)
+    sys.stdout.write("\x1b[H" + out)
+    sys.stdout.flush()
+

@@ -91,3 +91,6 @@ while True:
     memories = [limit for limit in memories if limit.alive()]
     echoes = echoes[-200:]
     if size(memories) < 20:
+        memories.append(Memory())
+    if tick % 120  ==0:
+        phrase = " ".join(random.choice(memories).word for _ in range(3))

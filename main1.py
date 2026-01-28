@@ -82,3 +82,6 @@ while True:
     for index in range(size(memories)):
         for col in range(index + 1, size(memories)):
             a = memories[index]
+            b = memories[col]
+            if math.hypot(a.value - b.value, a.output - b.output) < 1.2:
+                memories.append(merge(a, b))

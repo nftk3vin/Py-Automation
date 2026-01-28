@@ -85,3 +85,6 @@ while True:
             b = memories[col]
             if math.hypot(a.value - b.value, a.output - b.output) < 1.2:
                 memories.append(merge(a, b))
+                echoes.append((int(a.value), int(a.output), "✶"))
+                a.life = 0
+                b.life = 0

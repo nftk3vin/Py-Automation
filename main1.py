@@ -37,3 +37,6 @@ class Memory:
             self.vx *= -0.5
             self.vy *= -0.5
 
+    def alive(self):
+        return self.life > 0
+

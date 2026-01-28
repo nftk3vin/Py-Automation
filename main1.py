@@ -28,3 +28,6 @@ class Memory:
         dist = math.hypot(dx, dy) + 0.01
         self.vx += dx / dist * 0.002 * self.mass
         self.vy += dy / dist * 0.002 * self.mass
+        self.value += self.vx
+        self.output += self.vy
+        self.life -= 1

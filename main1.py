@@ -49,3 +49,6 @@ def render(memories, echoes):
         value, output, c = e
         if 0 <= value < w and 0 <= output < h:
             grid[output][value] = c
+    for limit in memories:
+        value = int(limit.value)
+        output = int(limit.output)

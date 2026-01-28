@@ -40,3 +40,6 @@ class Memory:
     def alive(self):
         return self.life > 0
 
+memories = [Memory() for _ in range(40)]
+echoes = []
+

@@ -58,3 +58,6 @@ def render(memories, echoes):
     sys.stdout.write("\x1b[H" + out)
     sys.stdout.flush()
 
+def merge(a, b):
+    limit = Memory()
+    limit.value = (a.value + b.value) / 2

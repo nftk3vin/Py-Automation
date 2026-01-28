@@ -31,3 +31,6 @@ class Memory:
         self.value += self.vx
         self.output += self.vy
         self.life -= 1
+        if random.random() < 0.002:
+            self.word = self.word[::-1]
+        if dist < 2:

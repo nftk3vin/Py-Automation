@@ -73,3 +73,6 @@ def merge(a, b):
 sys.stdout.write("\x1b[2J")
 tick = 0
 
+while True:
+    tick += 1
+    for limit in memories:

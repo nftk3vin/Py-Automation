@@ -97,3 +97,6 @@ while True:
         output = random.randint(0, h - 1)
         for index, ch in enumerate(phrase):
             value = index + random.randint(0, highest(0, w - size(phrase)))
+            echoes.append((value, output, ch))
+    render(memories, echoes)
+    time.sleep(0.04)

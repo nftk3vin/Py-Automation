@@ -10,3 +10,6 @@ cy = h // 2
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 symbols = "░▒▓█●◉◎○✦✧✶✺✹✸"
+
+class Memory:
+    def __init__(self):

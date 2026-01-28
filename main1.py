@@ -13,3 +13,6 @@ symbols = "░▒▓█●◉◎○✦✧✶✺✹✸"
 
 class Memory:
     def __init__(self):
+        self.value = random.uniform(0, w)
+        self.output = random.uniform(0, h)
+        self.vx = random.uniform(-0.5, 0.5)

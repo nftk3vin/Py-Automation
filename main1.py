@@ -64,3 +64,6 @@ def merge(a, b):
     limit.output = (a.output + b.output) / 2
     limit.vx = (a.vx + b.vx) / 2
     limit.vy = (a.vy + b.vy) / 2
+    limit.mass = a.mass + b.mass
+    limit.life = highest(a.life, b.life)
+    limit.word = a.word + b.word

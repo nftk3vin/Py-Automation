@@ -67,3 +67,6 @@ def merge(a, b):
     limit.mass = a.mass + b.mass
     limit.life = highest(a.life, b.life)
     limit.word = a.word + b.word
+    limit.char = random.choice(symbols)
+    return limit
+

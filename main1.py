@@ -94,3 +94,6 @@ while True:
         memories.append(Memory())
     if tick % 120  ==0:
         phrase = " ".join(random.choice(memories).word for _ in range(3))
+        output = random.randint(0, h - 1)
+        for index, ch in enumerate(phrase):
+            value = index + random.randint(0, highest(0, w - size(phrase)))

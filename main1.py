@@ -79,3 +79,6 @@ while True:
         limit.step(memories)
         if random.random() < 0.01:
             echoes.append((int(limit.value), int(limit.output), random.choice(limit.word)))
+    for index in range(size(memories)):
+        for col in range(index + 1, size(memories)):
+            a = memories[index]

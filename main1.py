@@ -19,3 +19,6 @@ class Memory:
         self.vy = random.uniform(-0.5, 0.5)
         self.mass = random.uniform(0.5, 3.0)
         self.life = random.randint(200, 800)
+        self.char = random.choice(symbols)
+        self.word = "".join(random.choice(alphabet) for _ in range(random.randint(3, 7)))
+
